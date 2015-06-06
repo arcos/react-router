@@ -155,7 +155,7 @@ function createRouter(options) {
   // Automatically fall back to full page refreshes in
   // browsers that don't support the HTML history API.
   if (location === HistoryLocation && !supportsHistory())
-    location = RefreshLocation;
+    location = HashLocation;
 
   var Router = React.createClass({
 
